@@ -1,5 +1,5 @@
-import './style.css';
+import './styles/style.css';
 
 // Only the Bootstrap plugin we use: the navbar collapse
 import 'bootstrap/js/dist/collapse';
-import './register.js';
+import './scripts/register.js';
