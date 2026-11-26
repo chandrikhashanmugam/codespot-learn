@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eff6ff"/><stop offset="1" stop-color="#f5f3ff"/></linearGradient>
+<linearGradient id="sc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+</defs>
+<rect width="640" height="480" rx="28" fill="url(#bg)"/>
+<circle cx="520" cy="90" r="70" fill="#ddd6fe" opacity=".7"/><circle cx="110" cy="400" r="90" fill="#bfdbfe" opacity=".6"/>
+<rect x="40" y="60" width="150" height="96" rx="14" fill="#fff" stroke="#e0e7ff" stroke-width="2"/>
+<rect x="56" y="78" width="70" height="10" rx="5" fill="#2563eb"/><rect x="56" y="98" width="118" height="8" rx="4" fill="#cbd5e1"/><rect x="56" y="114" width="96" height="8" rx="4" fill="#cbd5e1"/>
+<rect x="56" y="132" width="118" height="10" rx="5" fill="#e2e8f0"/><rect x="56" y="132" width="78" height="10" rx="5" fill="#7c3aed"/>
+<rect x="470" y="200" width="128" height="70" rx="14" fill="#fff" stroke="#e0e7ff" stroke-width="2"/>
+<text x="488" y="244" font-family="DejaVu Sans Mono, monospace" font-size="26" font-weight="700" fill="#7c3aed">&lt;/&gt;</text>
+<circle cx="568" cy="236" r="14" fill="#22c55e"/><path d="M561 236l5 5 9-10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+<!-- desk -->
+<rect x="120" y="380" width="420" height="16" rx="8" fill="#334155"/>
+<!-- laptop -->
+<path d="M210 250h220a10 10 0 0 1 10 10v116H200V260a10 10 0 0 1 10-10z" fill="#1e293b"/>
+<rect x="214" y="264" width="212" height="104" rx="4" fill="url(#sc)"/>
+<rect x="228" y="280" width="90" height="8" rx="4" fill="#fff" opacity=".9"/><rect x="228" y="296" width="140" height="6" rx="3" fill="#fff" opacity=".5"/><rect x="228" y="308" width="120" height="6" rx="3" fill="#fff" opacity=".5"/>
+<rect x="228" y="326" width="56" height="28" rx="6" fill="#fff" opacity=".95"/><rect x="292" y="326" width="56" height="28" rx="6" fill="#fff" opacity=".6"/><rect x="356" y="326" width="56" height="28" rx="6" fill="#fff" opacity=".6"/>
+<path d="M180 376h280l-14 10H194z" fill="#64748b"/>
+<!-- student -->
+<circle cx="470" cy="200" r="0"/>
+<path d="M440 384c0-62 26-100 66-100s66 38 66 100z" fill="#7c3aed"/>
+<circle cx="506" cy="236" r="34" fill="#f2c29b"/>
+<path d="M470 232c0-28 18-44 38-44 22 0 38 16 36 40-10-12-30-16-50-12-10 2-18 8-24 16z" fill="#1e1b4b"/>
+<path d="M452 330c-20 10-40 30-48 46h40c6-12 16-24 26-30z" fill="#6d28d9"/>
+<circle cx="422" cy="372" r="10" fill="#f2c29b"/>
+<!-- floating chips -->
+<rect x="250" y="150" width="140" height="44" rx="22" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+<circle cx="274" cy="172" r="12" fill="#2563eb"/><path d="M269 172l4 4 7-8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<rect x="294" y="166" width="80" height="10" rx="5" fill="#94a3b8"/>
+</svg>

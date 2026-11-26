@@ -1,0 +1,19 @@
+{
+  "name": "codespot-learn",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "bootstrap": "^5.3.9",
+    "tailwindcss": "^4.3.5"
+  }
+}

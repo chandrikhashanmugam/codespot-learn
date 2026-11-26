@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="CodeSpot Learn: practical online courses in web development, Python, UI/UX design and data analytics.">
+    <title>CodeSpot Learn | Online Learning Platform</title>
+</head>
+<body>
+
+    <!-- 1. Navigation bar: Bootstrap -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm" aria-label="Main navigation">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                    <img src="/assets/images/logo.svg" alt="" width="36" height="36">
+                    CodeSpot Learn
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary" href="#enrol">
+                                Register Now
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    <!-- 2. Hero section: Tailwind CSS -->
+    <section class="tw:bg-slate-50 tw:py-16 tw:md:py-24">
+        <div class="tw:mx-auto tw:max-w-7xl tw:px-6">
+
+            <div class="tw:grid tw:items-center tw:gap-12
+                        tw:md:grid-cols-2">
+
+                <div>
+                    <p class="tw:mb-4 tw:font-semibold tw:text-blue-600">
+                        Welcome to CodeSpot Learn
+                    </p>
+
+                    <h1 class="tw:mb-6 tw:text-3xl tw:sm:text-4xl tw:font-bold
+                               tw:leading-tight tw:text-slate-900
+                               tw:md:text-5xl">
+                        Learn New Skills.
+                        Build Your Future.
+                    </h1>
+
+                    <p class="tw:mb-8 tw:text-lg tw:text-slate-600">
+                        Explore practical learning programmes and
+                        develop skills for your career.
+                    </p>
+
+                    <div class="tw:flex tw:flex-wrap tw:gap-4">
+                        <a href="#courses"
+                           class="tw:rounded-lg tw:bg-blue-600 tw:no-underline
+                                  tw:px-6 tw:py-3 tw:font-semibold
+                                  tw:text-white tw:hover:bg-blue-700 tw:focus-visible:outline-2
+                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
+                            Explore Courses
+                        </a>
+
+                        <a href="#register"
+                           class="tw:rounded-lg tw:border tw:no-underline
+                                  tw:border-slate-300 tw:px-6 tw:py-3
+                                  tw:font-semibold tw:text-slate-800 tw:focus-visible:outline-2
+                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
+                            Start Learning
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tw:relative">
+                    <!-- Decorative background shapes -->
+                    <div class="tw:absolute tw:-top-6 tw:-right-6 tw:size-40
+                                tw:rounded-full tw:bg-purple-200 tw:blur-2xl"></div>
+                    <div class="tw:absolute tw:-bottom-6 tw:-left-6 tw:size-40
+                                tw:rounded-full tw:bg-blue-200 tw:blur-2xl"></div>
+
+                    <img
+                        src="/assets/images/learning-hero.svg"
+                        alt="Student learning web development on a laptop"
+                        width="640" height="480" fetchpriority="high"
+                        class="tw:relative tw:w-full tw:rounded-2xl
+                               tw:object-cover tw:shadow-xl">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Course search: Bootstrap form controls -->
+    <section class="tw:py-10">
+        <div class="container">
+            <form class="tw:mx-auto tw:max-w-2xl" role="search">
+                <label for="courseSearch" class="form-label fw-semibold">
+                    Find a course
+                </label>
+                <div class="input-group input-group-lg">
+                    <input type="search" id="courseSearch" class="form-control"
+                           placeholder="Search courses, for example Python">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 4. Course categories: Bootstrap grid + Tailwind cards -->
+    <section class="tw:py-16">
+        <div class="container">
+
+            <div class="tw:mb-10 tw:text-center">
+                <h2 class="tw:text-3xl tw:font-bold">
+                    Explore Course Categories
+                </h2>
+
+                <p class="tw:mt-3 tw:text-slate-600">
+                    Choose a learning path that matches your interests.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="tw:h-full tw:rounded-xl tw:border tw:border-slate-200
+                            tw:bg-white tw:p-6 tw:text-center">
+                    <img src="/assets/icons/web.svg" alt=""
+                         class="tw:mx-auto tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-lg tw:font-bold">Web Development</h3>
+                    <p class="tw:mt-2 tw:mb-0 tw:text-sm tw:text-slate-600">
+                        Learn modern website development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="tw:h-full tw:rounded-xl tw:border tw:border-slate-200
+                            tw:bg-white tw:p-6 tw:text-center">
+                    <img src="/assets/icons/python.svg" alt=""
+                         class="tw:mx-auto tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-lg tw:font-bold">Python Programming</h3>
+                    <p class="tw:mt-2 tw:mb-0 tw:text-sm tw:text-slate-600">
+                        Build programming fundamentals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="tw:h-full tw:rounded-xl tw:border tw:border-slate-200
+                            tw:bg-white tw:p-6 tw:text-center">
+                    <img src="/assets/icons/design.svg" alt=""
+                         class="tw:mx-auto tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-lg tw:font-bold">UI/UX Design</h3>
+                    <p class="tw:mt-2 tw:mb-0 tw:text-sm tw:text-slate-600">
+                        Understand user-focused design.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="tw:h-full tw:rounded-xl tw:border tw:border-slate-200
+                            tw:bg-white tw:p-6 tw:text-center">
+                    <img src="/assets/icons/data.svg" alt=""
+                         class="tw:mx-auto tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-lg tw:font-bold">Data Analytics</h3>
+                    <p class="tw:mt-2 tw:mb-0 tw:text-sm tw:text-slate-600">
+                        Learn to work with data.
+                    </p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Featured courses: Tailwind CSS cards -->
+    <section id="courses" class="tw:bg-slate-50 tw:py-16">
+        <div class="tw:mx-auto tw:max-w-7xl tw:px-6">
+
+            <div class="tw:mb-10">
+                <h2 class="tw:text-3xl tw:font-bold">
+                    Featured Courses
+                </h2>
+
+                <p class="tw:mt-2 tw:text-slate-600">
+                    Start learning with our popular programmes.
+                </p>
+            </div>
+
+            <div class="tw:grid tw:gap-8
+                        tw:md:grid-cols-2 tw:lg:grid-cols-3">
+
+                <article class="course-card tw:overflow-hidden tw:rounded-xl
+                                tw:bg-white tw:shadow-sm
+                                tw:flex tw:flex-col">
+
+                    <img
+                        src="/assets/images/web-development.svg"
+                        alt="Full Stack Web Development course"
+                        width="640" height="360" loading="lazy"
+                        class="tw:h-48 tw:w-full tw:object-cover">
+
+                    <div class="tw:p-6 tw:flex tw:flex-1 tw:flex-col">
+                        <span class="tw:text-sm tw:font-semibold
+                                     tw:text-blue-600">
+                            Beginner
+                        </span>
+
+                        <h3 class="tw:mt-3 tw:text-xl tw:font-bold">
+                            Full Stack Web Development
+                        </h3>
+
+                        <p class="tw:mt-2 tw:text-slate-600">
+                            Learn frontend and backend development.
+                        </p>
+
+                        <p class="tw:mt-4 tw:text-sm tw:text-slate-500">
+                            Duration: 12 Weeks
+                        </p>
+
+                        <a href="#enrol" data-course="Full Stack Web Development"
+                           class="view-course tw:mt-auto tw:self-start tw:rounded-lg
+                                  tw:bg-blue-600 tw:px-5 tw:py-2
+                                  tw:text-white tw:no-underline tw:focus-visible:outline-2
+                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
+                            View Course
+                        </a>
+                    </div>
+                </article>
+
+                <article class="course-card tw:overflow-hidden tw:rounded-xl
+                                tw:bg-white tw:shadow-sm
+                                tw:flex tw:flex-col">
+
+                    <img
+                        src="/assets/images/python-programming.svg"
+                        alt="Python Programming course"
+                        width="640" height="360" loading="lazy"
+                        class="tw:h-48 tw:w-full tw:object-cover">
+
+                    <div class="tw:p-6 tw:flex tw:flex-1 tw:flex-col">
+                        <span class="tw:text-sm tw:font-semibold
+                                     tw:text-blue-600">
+                            Beginner
+                        </span>
+
+                        <h3 class="tw:mt-3 tw:text-xl tw:font-bold">
+                            Python Programming
+                        </h3>
+
+                        <p class="tw:mt-2 tw:text-slate-600">
+                            Build strong programming fundamentals with hands-on exercises and mini projects.
+                        </p>
+
+                        <p class="tw:mt-4 tw:text-sm tw:text-slate-500">
+                            Duration: 8 Weeks
+                        </p>
+
+                        <a href="#enrol" data-course="Python Programming"
+                           class="view-course tw:mt-auto tw:self-start tw:rounded-lg
+                                  tw:bg-blue-600 tw:px-5 tw:py-2
+                                  tw:text-white tw:no-underline tw:focus-visible:outline-2
+                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
+                            View Course
+                        </a>
+                    </div>
+                </article>
+
+                <article class="course-card tw:overflow-hidden tw:rounded-xl
+                                tw:bg-white tw:shadow-sm
+                                tw:flex tw:flex-col">
+
+                    <img
+                        src="/assets/images/ui-ux-design.svg"
+                        alt="UI/UX Design course"
+                        width="640" height="360" loading="lazy"
+                        class="tw:h-48 tw:w-full tw:object-cover">
+
+                    <div class="tw:p-6 tw:flex tw:flex-1 tw:flex-col">
+                        <span class="tw:text-sm tw:font-semibold
+                                     tw:text-blue-600">
+                            Intermediate
+                        </span>
+
+                        <h3 class="tw:mt-3 tw:text-xl tw:font-bold">
+                            UI/UX Design
+                        </h3>
+
+                        <p class="tw:mt-2 tw:text-slate-600">
+                            Design user-friendly interfaces.
+                        </p>
+
+                        <p class="tw:mt-4 tw:text-sm tw:text-slate-500">
+                            Duration: 10 Weeks
+                        </p>
+
+                        <a href="#enrol" data-course="UI/UX Design"
+                           class="view-course tw:mt-auto tw:self-start tw:rounded-lg
+                                  tw:bg-blue-600 tw:px-5 tw:py-2
+                                  tw:text-white tw:no-underline tw:focus-visible:outline-2
+                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
+                            View Course
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Why choose CodeSpot Learn?: Tailwind CSS -->
+    <section id="about" class="tw:py-16">
+        <div class="tw:mx-auto tw:max-w-7xl tw:px-6">
+
+            <div class="tw:mb-10 tw:text-center">
+                <h2 class="tw:text-3xl tw:font-bold">
+                    Why Choose CodeSpot Learn?
+                </h2>
+
+                <p class="tw:mt-3 tw:text-slate-600">
+                    Learn with a practical and career-focused approach.
+                </p>
+            </div>
+
+            <div class="tw:grid tw:gap-6
+                        tw:md:grid-cols-3">
+
+                <div class="tw:rounded-xl tw:border tw:border-slate-200 tw:p-6">
+                    <img src="/assets/icons/practical.svg" alt="" class="tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-xl tw:font-bold">
+                        Practical Learning
+                    </h3>
+                    <p class="tw:mt-3 tw:mb-0 tw:text-slate-600">
+                        Learn by building real-world projects.
+                    </p>
+                </div>
+
+                <div class="tw:rounded-xl tw:border tw:border-slate-200 tw:p-6">
+                    <img src="/assets/icons/industry.svg" alt="" class="tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-xl tw:font-bold">
+                        Industry-Relevant Skills
+                    </h3>
+                    <p class="tw:mt-3 tw:mb-0 tw:text-slate-600">
+                        Explore skills used in modern workplaces.
+                    </p>
+                </div>
+
+                <div class="tw:rounded-xl tw:border tw:border-slate-200 tw:p-6">
+                    <img src="/assets/icons/career.svg" alt="" class="tw:mb-4 tw:size-12">
+                    <h3 class="tw:text-xl tw:font-bold">
+                        Career-Focused Learning
+                    </h3>
+                    <p class="tw:mt-3 tw:mb-0 tw:text-slate-600">
+                        Develop skills to support your career journey.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Call to action: Tailwind CSS -->
+    <section id="register" class="tw:px-6 tw:py-16">
+        <div class="tw:mx-auto tw:max-w-5xl tw:rounded-3xl tw:p-10 tw:text-center
+                    tw:bg-linear-to-r tw:from-blue-600 tw:to-purple-600
+                    tw:text-white tw:md:p-14">
+
+            <h2 class="tw:text-3xl tw:font-bold">Ready to Start Learning?</h2>
+
+            <p class="tw:mx-auto tw:mt-3 tw:max-w-xl tw:text-blue-100">
+                Join CodeSpot Learn and take the first step
+                towards your new career.
+            </p>
+
+            <div class="tw:mt-8 tw:flex tw:flex-col tw:gap-3
+                        tw:sm:flex-row tw:sm:justify-center">
+                <a href="#courses"
+                   class="tw:rounded-lg tw:border tw:border-white/60 tw:px-10 tw:py-3
+                          tw:font-semibold tw:whitespace-nowrap tw:text-white tw:no-underline">
+                    Explore Courses
+                </a>
+                <a href="#enrol"
+                   class="tw:rounded-lg tw:bg-amber-400 tw:px-10 tw:py-3 tw:font-bold
+                          tw:whitespace-nowrap tw:text-slate-900 tw:no-underline
+                          tw:shadow-lg tw:hover:bg-amber-300">
+                    Register Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 8. Registration: Bootstrap form + JavaScript -->
+    <section id="enrol" class="tw:bg-slate-50 tw:py-16">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+
+                    <h2 class="tw:text-center tw:text-3xl tw:font-bold">
+                        Register for a Course
+                    </h2>
+                    <p class="tw:mt-3 tw:mb-8 tw:text-center tw:text-slate-600">
+                        Fill in your details and choose a course.
+                    </p>
+
+                    <form id="registerForm" class="tw:rounded-2xl tw:bg-white tw:p-6 tw:shadow-sm tw:md:p-10"
+                          novalidate>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="studentName" class="form-label">Full Name</label>
+                                <input type="text" id="studentName" name="name"
+                                       class="form-control" minlength="3" required>
+                                <div class="invalid-feedback">
+                                    Please enter your full name (at least 3 letters).
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="studentEmail" class="form-label">Email Address</label>
+                                <input type="email" id="studentEmail" name="email"
+                                       class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="courseSelect" class="form-label">Course</label>
+                                <select id="courseSelect" name="course" class="form-select" required>
+                                    <option value="">Choose a course</option>
+                                    <option>Full Stack Web Development</option>
+                                    <option>Python Programming</option>
+                                    <option>UI/UX Design</option>
+                                    <option>Data Analytics</option>
+                                </select>
+                                <div class="invalid-feedback">Please choose a course.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <button id="registerBtn" type="submit"
+                                        class="btn btn-primary btn-lg w-100">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="formMessage" class="alert alert-success mt-4 mb-0 d-none"
+                             role="status"></div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- 9. Footer: Tailwind CSS -->
+    <footer id="contact" class="tw:bg-slate-900 tw:pt-14 tw:pb-8 tw:text-slate-300">
+        <div class="tw:mx-auto tw:max-w-7xl tw:px-6">
+
+            <div class="tw:grid tw:grid-cols-1 tw:gap-8
+                        tw:sm:grid-cols-2 tw:lg:grid-cols-4">
+
+                <div>
+                    <a href="#" class="tw:flex tw:items-center tw:gap-2 tw:text-xl
+                                       tw:font-bold tw:text-white tw:no-underline">
+                        <img src="/assets/images/logo.svg" alt="" width="36" height="36">
+                        CodeSpot Learn
+                    </a>
+                    <p class="tw:mt-4 tw:text-sm">
+                        Practical online courses that help students
+                        and professionals build job-ready skills.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="tw:mb-4 tw:text-base tw:font-semibold tw:text-white">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="tw:mb-2"><a href="#" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">Home</a></li>
+                        <li class="tw:mb-2"><a href="#courses" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">Courses</a></li>
+                        <li class="tw:mb-2"><a href="#about" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">About Us</a></li>
+                        <li class="tw:mb-2"><a href="#enrol" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">Register</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="tw:mb-4 tw:text-base tw:font-semibold tw:text-white">Courses</h3>
+                    <ul class="list-unstyled">
+                        <li class="tw:mb-2"><a href="#courses" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">Web Development</a></li>
+                        <li class="tw:mb-2"><a href="#courses" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">Python Programming</a></li>
+                        <li class="tw:mb-2"><a href="#courses" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">UI/UX Design</a></li>
+                        <li class="tw:mb-2"><a href="#courses" class="tw:text-slate-300 tw:no-underline tw:hover:text-white">Data Analytics</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="tw:mb-4 tw:text-base tw:font-semibold tw:text-white">Contact</h3>
+                    <p class="tw:mb-2 tw:text-sm">Email: hello@codespotlearn.example</p>
+                    <p class="tw:mb-2 tw:text-sm">Monday to Saturday, 9 AM to 6 PM</p>
+                </div>
+
+            </div>
+
+            <p class="tw:mt-10 tw:mb-0 tw:border-t tw:border-slate-700 tw:pt-6
+                      tw:text-center tw:text-sm">
+                &copy; 2026 CodeSpot Learn. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
