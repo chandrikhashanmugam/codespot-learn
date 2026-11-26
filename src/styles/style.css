@@ -3,6 +3,11 @@
 @import "tailwindcss" prefix(tw);
 /* Bootstrap: only the parts we use, from src/styles/bootstrap.scss */
 
+/* Design token: change the brand colour in one place */
+@theme {
+    --color-brand: oklch(54.6% 0.245 262.881);
+}
+
 /* Our own global styles are unlayered,
    so they win over both frameworks. */
 body {

@@ -53,15 +53,15 @@ function createCourseCard(course) {
 
     const body = createElement("div", "tw:p-6 tw:flex tw:flex-1 tw:flex-col");
     const link = createElement("a",
-        "view-course tw:mt-auto tw:self-start tw:rounded-lg tw:bg-blue-600 tw:px-5 tw:py-2 " +
+        "view-course tw:mt-auto tw:self-start tw:rounded-lg tw:bg-brand tw:px-5 tw:py-2 " +
         "tw:text-white tw:no-underline tw:focus-visible:outline-2 " +
-        "tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600",
+        "tw:focus-visible:outline-offset-2 tw:focus-visible:outline-brand",
         "View Course");
     link.href = "#enrol";
     link.dataset.course = course.title;
 
     body.append(
-        createElement("span", "tw:text-sm tw:font-semibold tw:text-blue-600", course.level),
+        createElement("span", "tw:text-sm tw:font-semibold tw:text-brand", course.level),
         createElement("h3", "tw:mt-3 tw:text-xl tw:font-bold", course.title),
         createElement("p", "tw:mt-2 tw:text-slate-600", course.description),
         createElement("p", "tw:mt-4 tw:text-sm tw:text-slate-500", `Duration: ${course.duration}`),
