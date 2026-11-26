@@ -22,9 +22,11 @@ form.addEventListener("submit", function (event) {
     form.reset();
 });
 
-// "View Course" buttons: choose that course in the form
-document.querySelectorAll(".view-course").forEach(function (link) {
-    link.addEventListener("click", function () {
+// "View Course" links: one listener on the list (event delegation),
+// so it also works for cards created later by the search.
+document.getElementById("courseList").addEventListener("click", function (event) {
+    const link = event.target.closest(".view-course");
+    if (link) {
         document.getElementById("courseSelect").value = link.dataset.course;
-    });
+    }
 });

@@ -130,7 +130,7 @@
     <!-- 3. Course search: Bootstrap form controls -->
     <section class="tw:py-10">
         <div class="container">
-            <form class="tw:mx-auto tw:max-w-2xl" role="search">
+            <form id="courseSearchForm" class="tw:mx-auto tw:max-w-2xl" role="search">
                 <label for="courseSearch" class="form-label fw-semibold">
                     Find a course
                 </label>
@@ -225,124 +225,14 @@
                 </p>
             </div>
 
-            <div class="tw:grid tw:gap-8
+            <div id="courseList" class="tw:grid tw:gap-8
                         tw:md:grid-cols-2 tw:lg:grid-cols-3">
-
-                <article class="course-card tw:overflow-hidden tw:rounded-xl
-                                tw:bg-white tw:shadow-sm
-                                tw:flex tw:flex-col">
-
-                    <img
-                        src="/assets/images/web-development.svg"
-                        alt="Full Stack Web Development course"
-                        width="640" height="360" loading="lazy"
-                        class="tw:h-48 tw:w-full tw:object-cover">
-
-                    <div class="tw:p-6 tw:flex tw:flex-1 tw:flex-col">
-                        <span class="tw:text-sm tw:font-semibold
-                                     tw:text-blue-600">
-                            Beginner
-                        </span>
-
-                        <h3 class="tw:mt-3 tw:text-xl tw:font-bold">
-                            Full Stack Web Development
-                        </h3>
-
-                        <p class="tw:mt-2 tw:text-slate-600">
-                            Learn frontend and backend development.
-                        </p>
-
-                        <p class="tw:mt-4 tw:text-sm tw:text-slate-500">
-                            Duration: 12 Weeks
-                        </p>
-
-                        <a href="#enrol" data-course="Full Stack Web Development"
-                           class="view-course tw:mt-auto tw:self-start tw:rounded-lg
-                                  tw:bg-blue-600 tw:px-5 tw:py-2
-                                  tw:text-white tw:no-underline tw:focus-visible:outline-2
-                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
-                            View Course
-                        </a>
-                    </div>
-                </article>
-
-                <article class="course-card tw:overflow-hidden tw:rounded-xl
-                                tw:bg-white tw:shadow-sm
-                                tw:flex tw:flex-col">
-
-                    <img
-                        src="/assets/images/python-programming.svg"
-                        alt="Python Programming course"
-                        width="640" height="360" loading="lazy"
-                        class="tw:h-48 tw:w-full tw:object-cover">
-
-                    <div class="tw:p-6 tw:flex tw:flex-1 tw:flex-col">
-                        <span class="tw:text-sm tw:font-semibold
-                                     tw:text-blue-600">
-                            Beginner
-                        </span>
-
-                        <h3 class="tw:mt-3 tw:text-xl tw:font-bold">
-                            Python Programming
-                        </h3>
-
-                        <p class="tw:mt-2 tw:text-slate-600">
-                            Build strong programming fundamentals with hands-on exercises and mini projects.
-                        </p>
-
-                        <p class="tw:mt-4 tw:text-sm tw:text-slate-500">
-                            Duration: 8 Weeks
-                        </p>
-
-                        <a href="#enrol" data-course="Python Programming"
-                           class="view-course tw:mt-auto tw:self-start tw:rounded-lg
-                                  tw:bg-blue-600 tw:px-5 tw:py-2
-                                  tw:text-white tw:no-underline tw:focus-visible:outline-2
-                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
-                            View Course
-                        </a>
-                    </div>
-                </article>
-
-                <article class="course-card tw:overflow-hidden tw:rounded-xl
-                                tw:bg-white tw:shadow-sm
-                                tw:flex tw:flex-col">
-
-                    <img
-                        src="/assets/images/ui-ux-design.svg"
-                        alt="UI/UX Design course"
-                        width="640" height="360" loading="lazy"
-                        class="tw:h-48 tw:w-full tw:object-cover">
-
-                    <div class="tw:p-6 tw:flex tw:flex-1 tw:flex-col">
-                        <span class="tw:text-sm tw:font-semibold
-                                     tw:text-blue-600">
-                            Intermediate
-                        </span>
-
-                        <h3 class="tw:mt-3 tw:text-xl tw:font-bold">
-                            UI/UX Design
-                        </h3>
-
-                        <p class="tw:mt-2 tw:text-slate-600">
-                            Design user-friendly interfaces.
-                        </p>
-
-                        <p class="tw:mt-4 tw:text-sm tw:text-slate-500">
-                            Duration: 10 Weeks
-                        </p>
-
-                        <a href="#enrol" data-course="UI/UX Design"
-                           class="view-course tw:mt-auto tw:self-start tw:rounded-lg
-                                  tw:bg-blue-600 tw:px-5 tw:py-2
-                                  tw:text-white tw:no-underline tw:focus-visible:outline-2
-                                  tw:focus-visible:outline-offset-2 tw:focus-visible:outline-blue-600">
-                            View Course
-                        </a>
-                    </div>
-                </article>
-
+                <!-- Course cards are created by src/scripts/courses.js -->
             </div>
+
+            <p id="noResults" class="tw:mt-6 tw:text-slate-600" hidden>
+                No courses match your search. Try another word.
+            </p>
         </div>
     </section>
 
