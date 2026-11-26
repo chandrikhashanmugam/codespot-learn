@@ -1,0 +1,27 @@
+// Only the Bootstrap parts CodeSpot Learn uses
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Keep only the utility classes we use (d-flex, ms-auto, fw-bold ...)
+$utilities: map-get-multiple($utilities, (
+    "align-items", "background-color", "display", "font-weight", "gap",
+    "justify-content", "margin-bottom", "margin-start", "margin-top",
+    "shadow", "width"
+));
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/utilities/api";

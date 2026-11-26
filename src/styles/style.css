@@ -1,7 +1,7 @@
 @layer theme, base, bootstrap, components, utilities;
 
 @import "tailwindcss" prefix(tw);
-@import "bootstrap/dist/css/bootstrap.min.css" layer(bootstrap);
+/* Bootstrap: only the parts we use, from src/styles/bootstrap.scss */
 
 /* Our own global styles are unlayered,
    so they win over both frameworks. */

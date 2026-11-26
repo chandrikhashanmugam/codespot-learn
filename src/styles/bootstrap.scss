@@ -1,0 +1,6 @@
+@use "sass:meta";
+
+// Load our Bootstrap selection inside the "bootstrap" cascade layer
+@layer bootstrap {
+    @include meta.load-css("bootstrap-parts");
+}
